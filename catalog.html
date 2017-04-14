@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Барбершоп</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+	<header class="main-header">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><img src="logo.png" width="" height="" alt="Логотип"></a>
+			</div>
+			<nav class="main-nav">
+				<ul>
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Прайс-лист</a></li>
+					<li><a href="#" class="main-nav-active">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="user-block">
+				<a class="login" href="#">Вход</a> 
+			</div>
+		</div>
+	</header>
+	<main class="container">
+		<h1>Средства для ухода</h1>
+		<nav class="breadcrumbs">
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Магазин</a></li>
+				<li><a href="#" class="breadcrumbs-active">Средства для ухода</a></li>
+			</ul>
+		</nav>
+		<section class="filter">
+			<form action="#" method="post">
+				<label class="producers"><h2>Производители</h2>
+					<input type="checkbox" name="producer1" value="Baxter of California"> Baxter of California
+					<input type="checkbox" name="producer2" value="Mr Natty"> Mr Natty
+					<input type="checkbox" name="producer3" value="Suavecito"> Suavecito
+					<input type="checkbox" name="producer4" value="Malin+Goetz"> Malin+Goetz
+					<input type="checkbox" name="producer5" value="Murray's"> Murray's
+					<input type="checkbox" name="producer6" value="American Crew"> American Crew
+				</label>
+				<label class="groups"><h2>Группы товаров</h2>
+					<input type="radio" name="group" value="shaving"> Бритвенные принадлежности
+					<input type="radio" name="group" value="care"> Средства для ухода
+					<input type="radio" name="group" value="accessories"> Аксессуары
+				</label>
+				<input type="submit" name="show" value="Показать">
+			</form>
+		</section>
+		<section class="catalog">
+			<article class="catalog-item">
+				<img src="" alt="Набор для путешествий">
+				<a href="#" class="item-name">Набор для путешествий "BAXTER OF CALIFORNIA"</a>
+				<div class="price">2900 руб.</div>
+				<a href="#" class="btn">Купить</a>
+			</article>
+			<article class="catalog-item">
+				<img src="" alt="Увлажняющий кондиционер">
+				<a href="#" class="item-name">Увлажняющий кондиционер "BAXTER OF CALIFORNIA"</a>
+				<div class="price">750 руб.</div>
+				<a href="#" class="btn">Купить</a>
+			</article>
+			<article class="catalog-item">
+				<img src="" alt="Гель для волос">
+				<a href="#" class="item-name">Гель для волос "SUAVECITO"</a>
+				<div class="price">290 руб.</div>
+				<a href="#" class="btn">Купить</a>
+			</article>
+			<article class="catalog-item">
+				<img src="" alt="Глина для укладки волос">
+				<a href="#" class="item-name">Глина для укладки волос "AMERICAN CREW"</a>
+				<div class="price">500 руб.</div>
+				<a href="#" class="btn">Купить</a>
+			</article>
+			<article class="catalog-item">
+				<img src="" alt="Гель для волос">
+				<a href="#" class="item-name">Гель для волос "AMERICAN CREW"</a>
+				<div class="price">300 руб.</div>
+				<a href="#" class="btn">Купить</a>
+			</article>
+			<article class="catalog-item">
+				<img src="" alt="Набор для бритья">
+				<a href="#" class="item-name">Набор для бритья "BAXTER OF CALIFORNIA"</a>
+				<div class="price">3900 руб.</div>
+				<a href="#" class="btn">Купить</a>
+			</article>
+		</section>
+		<section>
+			<ul class="page">
+				<li><a href="#" class="page-item" title="На предыдущую страницу">1</a></li>
+				<li><a href="#" class="page-item page-current">2</a></li>
+				<li><a href="#" class="page-item" title="На следующую страницу">3</a></li>
+				<li><a href="#" class="page-item" title="На страницу номер 4">4</a></li>
+			</ul>
+		</section>
+	</main>
+	<footer class="page-footer">
+		<div class="container">
+			<section class="footer-contacts">
+				<p>
+				Барбершоп "Бородинский"<br>
+				Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+				<a href="#">Как нас найти?</a><br>
+				Телефон: +7(495)666-02-66
+				</p>
+			</section>
+			<section class="footer-social">
+				<a href="#" class="social-btn vkontakte-social">Вконтакте</a>
+				<a href="#" class="social-btn facebook-social">Фэйсбук</a>
+				<a href="#" class="social-btn instagram-social">Инстаграм</a>
+			</section>
+			<section class="footer-copyright">
+				Разработано:
+				<a href="htmlacademy.ru" class="btn copyright">htmlacademy.ru</a>
+			</section>
+		</div>
+	</footer>
+	<script src="js/file.js"></script>
+	</body>
+</html>
