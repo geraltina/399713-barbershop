@@ -1,10 +1,15 @@
 body {
+	width: 1200px;;
 	font-family: "PT Sans Narrow", Arial, sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	color: #000000;
 	line-height: 24px;
 	text-transform: uppercase;
+	background-image: url(../img/picture.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-attachment: fixed;
 }
 
 .index-content-title {
@@ -20,4 +25,18 @@ body {
 .header-two {
 	font-size: 24px;
 	line-height: 30px;
+}
+
+.features-name {
+	font-size: 30px;
+	line-height: 42px;
+	color: #ffffff;
+}
+
+.features-item p {
+	color: #ffffff;
+}
+
+.main-footer {
+	color: #ffffff;
 }
