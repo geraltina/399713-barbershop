@@ -159,25 +159,25 @@ body {
     margin-left: 240px;
 }
 
-.gallery {
+.catalog-gallery {
     float: left;
     width: 460px;
     min-height: 710px;
     margin-right: 70px;
 }
 
-.gallery .photo {
+.catalog-gallery .photo {
     margin-bottom: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.gallery .mini-photo {
+.catalog-gallery .mini-photo {
     width: 140px;
     min-height: 149px;
     margin-right: 20px;
 }
 
-.gallery .mini-photo:nth-child(3n) {
+.catalog-gallery .mini-photo:nth-child(3n) {
     margin-right: 0;
 }
 
