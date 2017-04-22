@@ -109,12 +109,21 @@ body {
 	min-height: 90px;
 }
 
-.catalog-header {
-    background-color: black;
+.page-header {
     margin: 0 auto;
+    background-color: black;
+}
+
+.page-footer {
+    margin: 0 auto;
+    padding-top: 60px;
+	padding-bottom: 40px;
+    color: #ffffff;
+	background: url(../img/background1.png) repeat;
 }
 
 .catalog-page {
+    margin: 0 auto;
     padding: 55px 120px;
     width: 1200px;
     background: url(../img/background.png) repeat;
@@ -148,6 +157,40 @@ body {
 
 .page {
     margin-left: 240px;
+}
+
+.gallery {
+    float: left;
+    width: 460px;
+    min-height: 710px;
+    margin-right: 70px;
+}
+
+.gallery .photo {
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery .mini-photo {
+    width: 140px;
+    min-height: 149px;
+    margin-right: 20px;
+}
+
+.gallery .mini-photo:nth-child(3n) {
+    margin-right: 0;
+}
+
+.description {
+    float: right;
+    width: 400px;
+    min-height: 710px;
+}
+
+.vendor-code {
+    float: right;
+    line-height: 24px;
+    color: #aeaeae;
 }
 
 .index-content-title {
