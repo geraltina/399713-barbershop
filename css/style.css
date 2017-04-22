@@ -122,7 +122,7 @@ body {
 	background: url(../img/background1.png) repeat;
 }
 
-.catalog-page {
+.minor-page {
     margin: 0 auto;
     padding: 55px 120px;
     width: 1200px;
@@ -193,6 +193,17 @@ body {
     color: #aeaeae;
 }
 
+.inline-left {
+    float: left;
+    width: 380px;
+    margin-right: 100px;
+}
+
+.inline-right {
+    float: right;
+    width: 460px;
+}
+
 .index-content-title {
 	font-size: 30px;
 	line-height: 42px;
@@ -236,4 +247,28 @@ body {
 
 .categorie {
     text-transform: none;
+}
+
+.best-way {
+    margin-bottom: 67px;
+}
+
+.price-table {
+    border-collapse: collapse;
+    margin-bottom: 80px;
+}
+
+.price-table td {
+    width: 231px;
+    height: 43px;
+    padding-left: 15px;
+    border: 2px solid black;
+}
+
+.price-table .price {
+    text-align: center;
+}
+
+.description-shop {
+    padding-top: 10px;
 }
