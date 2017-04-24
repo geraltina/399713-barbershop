@@ -44,7 +44,7 @@ body {
 .user-block {
 	display: inline-block;
 	width: 140px;
-	float: right;
+	padding: 23px 0;
 }
 
 /*Хедер других страниц*/
@@ -175,6 +175,7 @@ body {
 	width: 220px;
 	margin-right: 20px;
 	margin-bottom: 20px;
+	vertical-align: top;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -184,6 +185,7 @@ body {
 
 .item-name {
 	line-height: 24px;
+	font-size: 14px;
 	color: black;
 	text-decoration: none;
 }
