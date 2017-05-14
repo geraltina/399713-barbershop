@@ -613,12 +613,13 @@ body {
 .catalog-gallery {
 	float: left;
 	width: 460px;
-	margin-right: 70px;
+	margin-right: 90px;
+	margin-top: 48px;
 	font-size: 0;
 }
 
 .catalog-gallery .photo {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -634,18 +635,65 @@ body {
 
 .vendor-code {
 	float: right;
+	margin-right: 11px;
 	line-height: 24px;
 	color: #aeaeae;
 }
 
+.item-description {
+	margin-top: 30px;
+	margin-bottom: 34px;
+}
+
 .description-of-item {
-	float: right;
-	width: 400px;
+	float: left;
+	width: 390px;
+	margin-top: 68px;
+}
+
+.description-of-item .price {
+	float: left;
+	display: block;
+	width: 109px;
+	padding: 10px 0;
+	text-align: center;
+	background-color: #e5e5e5;
+}
+
+.description-of-item .btn {
+	width: 78px;
+}
+
+.description-of-item .header-two {
+	margin-top: 60px;
+}
+
+.description-of-item .items-in-set {
+	margin-top: 30px;
+	padding-left: 0;
+}
+
+.items-in-set li {
+	position: relative;
+	padding-left: 20px;
+	list-style: none;
+}
+
+.items-in-set li::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	margin-top: -4px;
+	width: 8px;
+	height: 8px;
+	background-color: black;
+	transform: rotate(45deg);
 }
 
 /*Прайс-лист*/
 .topic {
-	margin-top: 55px;
+	margin-top: 40px;
 	margin-bottom: 65px;
 	text-align: center;
 }
@@ -674,6 +722,7 @@ body {
 .inline-left {
 	float: left;
 	width: 380px;
+	padding: 0;
 	margin-right: 100px;
 }
 
@@ -682,8 +731,43 @@ body {
 	width: 460px;
 }
 
+.inline-right .header-two {
+	margin-top: -5px;
+	margin-bottom: 33px;
+}
+
 .best-way {
-	margin-bottom: 67px;
+	margin-bottom: 37px;
+}
+
+.best-way .header-two {
+	width: 300px;
+	margin-top: -5px;
+	margin-bottom: 27px;
+}
+
+.arsenal {
+	padding-left: 0;
+	list-style: none;
+}
+
+.arsenal li {
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 13px;
+	list-style: none;
+}
+
+.arsenal li::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	margin-top: -4px;
+	width: 8px;
+	height: 8px;
+	background-color: black;
+	transform: rotate(45deg);
 }
 
 .price-table {
@@ -692,13 +776,22 @@ body {
 
 .price-table td {
 	width: 231px;
-	height: 43px;
-	padding-left: 15px;
+	padding: 8px 15px;
 	border: 2px solid black;
 }
 
 .price-table td:nth-child(2n) {
 	text-align: center;
+}
+
+.some-words-header {
+	margin-bottom: 15px;
+}
+
+.description-shop,
+.description-item {
+	width: 385px;
+	margin-bottom: 50px;
 }
 
 /*Футер*/
@@ -797,7 +890,7 @@ body {
 /*Футер других страниц*/
 .page-footer {
 	margin: 0 auto;
-	padding-top: 60px;
+	padding-top: 55px;
 	padding-bottom: 40px;
 	color: #ffffff;
 	background: url(../img/background1.png) repeat;
