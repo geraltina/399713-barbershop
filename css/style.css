@@ -16,7 +16,7 @@
 
 body {
 	min-width: 960px;
-	font-family: "PT Sans Narrow", Arial, sans-serif;
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	color: #000000;
@@ -251,7 +251,7 @@ body {
 	display: inline-block;
 	margin-right: 20px;
 	width: 144px;
-	min-height: 44px;
+	min-height: 43px;
 	padding: 10px 0;
 	text-align: center;
 	color: white;
@@ -263,6 +263,17 @@ body {
 
 .btn:hover {
 	background-color: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled {
+	cursor: default;
+	opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+	background-color: #000000;
 }
 
 .index-content-right {
@@ -289,17 +300,6 @@ body {
 
 .gallery-prev {
 	float: left;
-}
-
-.btn.disabled,
-.btn:disabled {
-	cursor: default;
-	opacity: 0.5;
-}
-
-.btn.disabled:hover,
-.btn:disabled:hover {
-	background-color: #000000;
 }
 
 .gallery-next {
@@ -358,6 +358,10 @@ body {
 	background: url(../img/background.png) repeat;
 }
 
+.minor-page .header-one {
+	margin-bottom: 16px;
+}
+
 .breadcrumbs ul {
 	padding-left: 0;
 	font-size: 0;
@@ -371,7 +375,7 @@ body {
 .breadcrumbs li {
 	position: relative;
 	display: inline-block;
-	padding-right: 48px;
+	padding-right: 44px;
 	font-size: 14px;
 }
 
@@ -399,23 +403,113 @@ body {
 .filter {
 	float: left;
 	margin-right: 20px;
+	margin-top: 40px;
 	width: 220px;
 }
+
+.filter .catalog-filter {
+	border: none;
+	padding-left: 0;
+	padding-bottom: 0;
+	margin-left: 0;
+}
+
+.catalog-filter ul {
+	list-style: none;
+	padding-left: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+}
+
 .form-legend {
 	font-size: 24px;
 	line-height: 30px;
+	margin-bottom: 23px;
+}
+
+.catalog-filter:first-child {
+	margin-bottom: 18px;
+}
+
+.catalog-filter input[type="checkbox"] {
+	display: none;
+}
+
+.catalog-filter input[type="checkbox"] + label::before {
+	content: "";
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 23px;
+	margin-bottom: 17px;
+	width: 16px;
+	height: 16px;
+	border: 2px solid black;
+	background-color: #f9f6f3;
+	cursor: pointer;
+}
+
+.catalog-filter input[type="checkbox"]:checked + label::before {
+	content: "";
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 23px;
+	margin-bottom: 17px;
+	width: 16px;
+	height: 16px;
+	background-image: url(../img/cross-check.png);
+	background-repeat: no-repeat;
+	background-position: 3px 3px;
+	cursor: pointer;
+}
+
+.catalog-filter input[type="radio"] {
+	display: none;
+}
+
+.catalog-filter input[type="radio"] + label::before {
+	content: "";
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 23px;
+	margin-bottom: 18px;
+	width: 14px;
+	height: 14px;
+	border: 2px solid black;
+	border-radius: 50%;
+	background-color: #f9f6f3;
+	cursor: pointer;
+}
+
+.catalog-filter input[type="radio"]:checked + label::before {
+	content: "";
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 23px;
+	margin-bottom: 18px;
+	width: 14px;
+	height: 14px;
+	background-image: url(../img/radio.png);
+	background-position: 3px 3px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.filter-btn {
+	width: 112px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	font: inherit;
 }
 
 .catalog {
 	float: right;
+	margin-top: 45px;
 	width: 700px;
 	font-size: 0;
 }
 
-.catalog .description {
-	background-color: white;
-	padding: 10px 16px;
-	font-size: 14px;
+.catalog .img {
+	font-size: 0;
 }
 
 .catalog-item {
@@ -431,23 +525,80 @@ body {
 	margin-right: 0;
 }
 
+.catalog-item .description {
+	padding: 15px 16px;
+	margin-top: -12px;
+	font-size: 0;
+	background-color: white;
+}
+
+.price-and-button {
+	margin-top: 4px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.catalog-item .price {
+	float: left;
+	display: block;
+	width: 110px;
+	padding: 10px 0;
+	text-align: center;
+	background-color: #e5e5e5;
+}
+
+.catalog-item .btn {
+	float: right;
+	margin: 0;
+	width: 78px;
+}
+
 .item-name {
-	line-height: 24px;
+	line-height: 18px;
 	font-size: 14px;
 	color: black;
 	text-decoration: none;
 }
 
-.categorie {
+.category {
+	display: block;
+	margin: 0;
+	padding: 0;
 	text-transform: none;
 }
 
 .page {
+	float: left;
 	margin-left: 240px;
+	margin-top: 10px;
+}
+
+.page ul {
+	padding: 0;
 }
 
 .page li {
 	display: inline-block;
+	margin-right: 5px;
+}
+
+.page li:last-child {
+	margin-right: 0;
+}
+
+.page .page-item {
+	display: block;
+	width: 43px;
+	padding: 10px 0;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+
+.page .page-current {
+	color: black;
+	background-color: white;
 }
 
 /*Страница товара*/
@@ -554,7 +705,7 @@ body {
 .footer-contacts {
 	float: left;
 	width: 320px;
-	margin-right: 60px;
+	margin-right: 80px;
 }
 
 .footer-contacts a {
