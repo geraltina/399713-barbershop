@@ -431,6 +431,10 @@ body {
 	margin-bottom: 18px;
 }
 
+.catalog-filter label:hover {
+	color: #663d15;
+}
+
 .catalog-filter input[type="checkbox"] {
 	display: none;
 }
@@ -594,6 +598,10 @@ body {
 	text-align: center;
 	color: white;
 	background-color: black;
+}
+
+.page-item:hover {
+	background-color: #663d15;
 }
 
 .page .page-current {
