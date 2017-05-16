@@ -15,6 +15,8 @@
 } 
 
 body {
+	margin: 0;
+	padding: 0;
 	min-width: 960px;
 	font-family: "PT Sans Narrow", "Arial", sans-serif;
 	font-size: 14px;
@@ -330,6 +332,10 @@ body {
 	margin-right: 0;
 }
 
+.appointment-form input[type="text"]:focus {
+	border: 2px solid #663d15;
+}
+
 .appointment-form button[type="submit"] {
 	width: 100%;
 	min-height: 44px;
@@ -339,6 +345,7 @@ body {
 	font-family: inherit;
 	font-weight: bold;
 	font-size: 14px;
+	border: 0;
 }
 
 
@@ -409,8 +416,7 @@ body {
 
 .filter .catalog-filter {
 	border: none;
-	padding-left: 0;
-	padding-bottom: 0;
+	padding: 0;
 	margin-left: 0;
 }
 
@@ -462,7 +468,7 @@ body {
 	height: 16px;
 	background-image: url(../img/cross-check.png);
 	background-repeat: no-repeat;
-	background-position: 3px 3px;
+	background-position: center;
 	cursor: pointer;
 }
 
@@ -488,14 +494,21 @@ body {
 	content: "";
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 23px;
-	margin-bottom: 18px;
-	width: 14px;
-	height: 14px;
-	background-image: url(../img/radio.png);
-	background-position: 3px 3px;
-	background-repeat: no-repeat;
+	margin-top: 2px;
+	margin-right: 25px;
+	margin-left: 2px;
+	margin-bottom: 20px;
+	width: 8px;
+	height: 8px;
+	background-color: black;
+	border: 3px solid white;
+	box-shadow: 0 0 0 2px black;
 	cursor: pointer;
+}
+
+.catalog-filter input[type="checkbox"]:disabled + label,
+.catalog-filter input[type="radio"]:disabled + label {
+	opacity: 0.3;
 }
 
 .filter-btn {
@@ -503,6 +516,7 @@ body {
 	margin-top: 20px;
 	text-transform: uppercase;
 	font: inherit;
+	border: 0;
 }
 
 .catalog {
